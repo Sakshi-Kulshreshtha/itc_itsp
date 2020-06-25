@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Details</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'itsp/bootstrap.min.css' %}" rel="stylesheet"> 
+    
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'itsp/theme.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body>
+<div class="container" style="background:lightgreen">
+      <div class="jumbotron">
+        <h1>ITSP IIT BOMBAY:Teams Details </h1>
+              </div>
+
+      {% for n in teams %}
+      <div class="page-header">
+        <h1> Name:{{n.name}}</h1>
+        <h3>Team Id:{{n.t_id}}</h3>
+        <h4>Team Members:{{n.members}}</h4>
+      </div>
+      
+      {% endfor %}
+
+    </div> 
+    </body>
+</html>

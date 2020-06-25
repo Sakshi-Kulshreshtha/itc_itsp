@@ -1,0 +1,34 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+
+#div1{
+  background-color:blue;
+}
+
+.add-teams {
+  width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  font-weight:normal;
+
+}
+.add-teams .heading,
+.add-teams  {
+  margin-bottom: 10px;
+}
+.add-teams  {
+  font-weight: normal;
+}
+.add-teams .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
